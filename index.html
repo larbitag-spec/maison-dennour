@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maison d'Ennour - Maquette accueil</title>
+    <link rel="stylesheet" href="styles.css?v=20260520-11">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <a class="logo" href="#" aria-label="Maison d'Ennour" data-home-link>
+          <img src="assets/logo-maison-ennour.svg" alt="Maison d'Ennour">
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <form class="search" action="#" role="search">
+          <input type="search" placeholder="Rechercher un livre, un auteur, une collection..." aria-label="Recherche">
+          <button type="submit">Rechercher</button>
+        </form>
+        <div class="quick-links" aria-label="Accès rapides">
+          <a class="quick-link" href="#">
+            <span class="quick-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            </span>
+            <span>Librairies</span>
+          </a>
+          <a class="quick-link" href="#">
+            <span class="quick-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>
+            </span>
+            <span>Compte</span>
+          </a>
+          <a class="quick-link cart-link" href="#cart-panel" aria-controls="cart-panel" aria-expanded="false">
+            <span class="quick-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 6h15l-2 8H8L6 3H3"/><circle cx="9" cy="20" r="1.7"/><circle cx="18" cy="20" r="1.7"/></svg>
+            </span>
+            <span>Panier</span>
+          </a>
+        </div>
+      </div>
+      <nav class="nav" id="main-nav" aria-label="Navigation principale">
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Coran</button>
+          <div class="catalog-menu">
+            <section>
+              <h2>Coran</h2>
+              <a href="#">Coran Tajwid</a>
+              <a href="#">Français / bilingue</a>
+              <a href="#">Traduction du Coran</a>
+              <a href="#">Exégèse</a>
+            </section>
+            <section>
+              <h2>Lectures</h2>
+              <a href="#">Hafs</a>
+              <a href="#">Warch</a>
+              <a href="#">Qaloun</a>
+              <a href="#">Autres langues</a>
+            </section>
+            <section class="catalog-highlight">
+              <span>Nouveau</span>
+              <strong>Le Noble Coran en 4 couleurs</strong>
+              <p>Arabe, français et phonétique avec translittération.</p>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Livres</button>
+          <div class="catalog-menu">
+            <section>
+              <h2>Sciences islamiques</h2>
+              <a href="#">Foi & spiritualité</a>
+              <a href="#">Hadith</a>
+              <a href="#">Jurisprudence</a>
+              <a href="#">Invocations</a>
+            </section>
+            <section>
+              <h2>Culture</h2>
+              <a href="#">Biographie</a>
+              <a href="#">Histoire</a>
+              <a href="#">Langue arabe</a>
+              <a href="#">Médecine & santé</a>
+            </section>
+            <section>
+              <h2>Formats</h2>
+              <a href="#">Petits prix</a>
+              <a href="#">Livres numériques</a>
+              <a href="#">Meilleures ventes</a>
+              <a href="#">Toutes les catégories</a>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Famille</button>
+          <div class="catalog-menu compact-menu">
+            <section>
+              <h2>Famille</h2>
+              <a href="#">Mariage</a>
+              <a href="#">Éducation</a>
+              <a href="#">Vie quotidienne</a>
+              <a href="#">Conseils aux parents</a>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Espace enfants</button>
+          <div class="catalog-menu compact-menu">
+            <section>
+              <h2>Espace enfants</h2>
+              <a href="#">Histoires</a>
+              <a href="#">Jeux éducatifs</a>
+              <a href="#">Apprentissage de la prière</a>
+              <a href="#">Ramadan enfants</a>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Nos éditions</button>
+          <div class="catalog-menu compact-menu">
+            <section>
+              <h2>Nos éditions</h2>
+              <a href="#">Maison d'Ennour</a>
+              <a href="#">Collections</a>
+              <a href="#">Auteurs</a>
+              <a href="#">Publications récentes</a>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Nouveautés</button>
+          <div class="catalog-menu compact-menu">
+            <section>
+              <h2>Nouveautés</h2>
+              <a href="#">Arrivages récents</a>
+              <a href="#">Nouveautés Coran</a>
+              <a href="#">Nouveautés jeunesse</a>
+              <a href="#">Romans & récits</a>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">Promotions</button>
+          <div class="catalog-menu compact-menu">
+            <section>
+              <h2>Promotions</h2>
+              <a href="#">Offres du moment</a>
+              <a href="#">Livres à moins de 5 €</a>
+              <a href="#">Lots & packs</a>
+              <a href="#">Dernières pièces</a>
+            </section>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <button type="button" class="catalog-trigger" aria-expanded="false">كتب عربية</button>
+          <div class="catalog-menu">
+            <section dir="rtl">
+              <h2>كتب عربية</h2>
+              <a href="#">العقيدة</a>
+              <a href="#">الفقه</a>
+              <a href="#">الحديث وعلومه</a>
+              <a href="#">القرآن وعلومه</a>
+            </section>
+            <section dir="rtl">
+              <h2>موضوعات</h2>
+              <a href="#">التزكية</a>
+              <a href="#">اللغة والأدب</a>
+              <a href="#">التاريخ والسير</a>
+              <a href="#">الأسرة وتربية الطفل</a>
+            </section>
+          </div>
+        </div>
+        <a class="catalog-phone" href="tel:0143387732" aria-label="Appeler Maison d'Ennour">
+          <span aria-hidden="true">☎</span>
+          01 43 38 77 32
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="promo-pill" aria-label="Offre du moment">
+        <span>Offre librairie</span>
+        <strong>-10% sur une sélection de nouveautés</strong>
+        <em>code ENNOUR10</em>
+      </section>
+
+      <section class="hero hero-banner" aria-label="Bandeau principal anim&eacute;">
+        <article class="banner-slide banner-one prepared-book-slide">
+          <div class="banner-copy">
+            <p class="eyebrow">Nouveaut&eacute; Coran</p>
+            <h1>Le Noble Coran</h1>
+            <p>Version bleue du Noble Coran en arabe, fran&ccedil;ais et phon&eacute;tique, avec translitt&eacute;ration pour accompagner la lecture.</p>
+            <p class="hero-note">Le reflet est align&eacute; au bas du bandeau pour un rendu plus propre.</p>
+            <div class="product-meta">
+              <span>20,00 &euro;</span>
+              <strong>Bleu &middot; Grand format</strong>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#">Voir le produit</a>
+              <a class="button secondary" href="#">D&eacute;couvrir</a>
+            </div>
+          </div>
+          <div class="banner-visual single-book">
+            <img src="assets/nouveau-livres-bureau/cover-bleu-500.png" alt="Le Noble Coran - couverture bleue">
+          </div>
+        </article>
+
+        <article class="banner-slide banner-two prepared-book-slide">
+          <div class="banner-copy">
+            <p class="eyebrow">Nouveaut&eacute; Coran</p>
+            <h2>Le Noble Coran</h2>
+            <p>Version rose du Noble Coran, pens&eacute;e pour une pr&eacute;sentation douce et lumineuse.</p>
+            <p class="hero-note">Image pr&eacute;par&eacute;e en hauteur 500px pour &eacute;viter les recadrages.</p>
+            <div class="product-meta">
+              <span>20,00 &euro;</span>
+              <strong>Rose &middot; Grand format</strong>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#">Voir le produit</a>
+              <a class="button secondary" href="#">D&eacute;couvrir</a>
+            </div>
+          </div>
+          <div class="banner-visual single-book">
+            <img src="assets/nouveau-livres-bureau/cover-rose-500.png" alt="Le Noble Coran - couverture rose">
+          </div>
+        </article>
+
+        <article class="banner-slide banner-three prepared-book-slide">
+          <div class="banner-copy">
+            <p class="eyebrow">Nouveaut&eacute; Coran</p>
+            <h2>Le Noble Coran</h2>
+            <p>Version blanche sobre et &eacute;l&eacute;gante, id&eacute;ale pour une mise en avant claire.</p>
+            <p class="hero-note">Le visuel conserve son reflet complet jusqu'au bas du slide.</p>
+            <div class="product-meta">
+              <span>20,00 &euro;</span>
+              <strong>Blanc &middot; Grand format</strong>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#">Voir le produit</a>
+              <a class="button secondary" href="#">D&eacute;couvrir</a>
+            </div>
+          </div>
+          <div class="banner-visual single-book">
+            <img src="assets/nouveau-livres-bureau/cover-blanc-500.png" alt="Le Noble Coran - couverture blanche">
+          </div>
+        </article>
+
+        <article class="banner-slide banner-four prepared-book-slide">
+          <div class="banner-copy">
+            <p class="eyebrow">Nouveaut&eacute; Coran</p>
+            <h2>Le Noble Coran</h2>
+            <p>Version noire plus contrast&eacute;e, pour une pr&eacute;sence premium dans le carrousel.</p>
+            <p class="hero-note">Une variante forte pour pr&eacute;senter la collection en quatre couleurs.</p>
+            <div class="product-meta">
+              <span>20,00 &euro;</span>
+              <strong>Noir &middot; Grand format</strong>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#">Voir le produit</a>
+              <a class="button secondary" href="#">D&eacute;couvrir</a>
+            </div>
+          </div>
+          <div class="banner-visual single-book">
+            <img src="assets/nouveau-livres-bureau/cover-noir-500.png" alt="Le Noble Coran - couverture noire">
+          </div>
+        </article>
+
+        <button class="slider-arrow slider-prev" type="button" aria-label="Slide pr&eacute;c&eacute;dente">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+        </button>
+        <button class="slider-arrow slider-next" type="button" aria-label="Slide suivante">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </button>
+
+        <div class="slider-dots" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="category-strip" aria-label="Catégories principales">
+        <a href="#"><span>Coran</span><strong>Tajwid, arabe, bilingue</strong></a>
+        <a href="#"><span>Sciences islamiques</span><strong>Hadith, fiqh, spiritualité</strong></a>
+        <a href="#"><span>Jeunesse</span><strong>Histoires, activités, apprentissage</strong></a>
+        <a href="#"><span>Livres arabes</span><strong>العقيدة، الفقه، اللغة</strong></a>
+      </section>
+
+      <section class="benefits" aria-label="Services Maison d'Ennour">
+        <article>
+          <h3>Retrait en librairie</h3>
+          <p>Préparez votre commande et récupérez-la dans l'une des adresses parisiennes.</p>
+        </article>
+        <article>
+          <h3>Livraison suivie</h3>
+          <p>Les ouvrages sont expédiés avec un suivi clair, en France et à l'international.</p>
+        </article>
+        <article>
+          <h3>Conseil spécialisé</h3>
+          <p>Une question sur un titre, une traduction ou une collection ? L'équipe vous oriente.</p>
+        </article>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">À mettre en avant</p>
+          <h2>Notre sélection</h2>
+        </div>
+        <a href="#">Tout voir</a>
+      </section>
+
+      <section class="product-grid">
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Le-mois-de-Dhul-Hijjah-450x670.jpg" alt="Le mois de Dhul-Hijjah">
+          <div>
+            <p class="tag">Nouveau</p>
+            <h3>Le mois de Dhul-Hijjah</h3>
+            <p class="price">8,00 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/9782919843176-450x683.jpeg" alt="WLD BNT Tome 2">
+          <div>
+            <p class="tag">Jeunesse</p>
+            <h3>WLD BNT Tome 2 : La révolte des bannis</h3>
+            <p class="price">9,50 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Hidaya-9782960373318.jpg" alt="Hidaya Tome 2">
+          <div>
+            <p class="tag">Roman</p>
+            <h3>Hidaya Tome 2 - Sabran</h3>
+            <p class="price">15,00 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/A-coeur-ouvert-des-histoires-inspirantes-de-femmes-musulmanes-Soeurise.jpg" alt="A coeur ouvert">
+          <div>
+            <p class="tag">Inspirant</p>
+            <h3>A coeur ouvert</h3>
+            <p class="price">14,90 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/nouveaux-livres/histoires-prophetes-petit-blanc.jpg" alt="Les Histoires des Prophètes - petit format blanc">
+          <div>
+            <p class="tag">Petit format</p>
+            <h3>Les Histoires des Prophètes - Blanc</h3>
+            <p class="price">12,90 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/nouveaux-livres/histoires-prophetes-petit-bleu.jpg" alt="Les Histoires des Prophètes - petit format bleu clair">
+          <div>
+            <p class="tag">Petit format</p>
+            <h3>Les Histoires des Prophètes - Bleu clair</h3>
+            <p class="price">12,90 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/nouveaux-livres/histoires-prophetes-petit-saumon.jpg" alt="Les Histoires des Prophètes - petit format saumon clair">
+          <div>
+            <p class="tag">Petit format</p>
+            <h3>Les Histoires des Prophètes - Saumon clair</h3>
+            <p class="price">12,90 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="assets/nouveaux-livres/histoires-prophetes-petit-violet.jpg" alt="Les Histoires des Prophètes - petit format violet clair">
+          <div>
+            <p class="tag">Petit format</p>
+            <h3>Les Histoires des Prophètes - Violet clair</h3>
+            <p class="price">12,90 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Arrivages récents</p>
+          <h2>Nouveautés</h2>
+        </div>
+        <a href="#">Tout voir</a>
+      </section>
+
+      <section class="product-grid">
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Les-invocations-tirees-du-Coran-et-de-la-Sunna-al-Hadith.jpg" alt="Les invocations tirées du Coran et de la Sunna">
+          <div>
+            <p class="tag">Invocation</p>
+            <h3>Les invocations tirées du Coran et de la Sunna</h3>
+            <p class="price">15,00 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Les-qualites-de-lepouse-vertueuse-Shaykh-Al-Badr-Al-Bayyinah-450x713.jpg" alt="Les qualités de l'épouse vertueuse">
+          <div>
+            <p class="tag">Famille</p>
+            <h3>Les qualités de l'épouse vertueuse</h3>
+            <p class="price">6,00 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Les-bienfaits-de-lepreuve-Ibn-Al-Qayyim-Al-Jawziyya.jpeg" alt="Les bienfaits de l'épreuve">
+          <div>
+            <p class="tag">Spiritualité</p>
+            <h3>Les bienfaits de l'épreuve</h3>
+            <p class="price">10,00 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Le-mois-de-Dhul-Hijjah-450x670.jpg" alt="Le mois de Dhul-Hijjah">
+          <div>
+            <p class="tag">Saisonnier</p>
+            <h3>Le mois de Dhul-Hijjah</h3>
+            <p class="price">8,00 €</p>
+          </div>
+          <button>Ajouter au panier</button>
+        </article>
+      </section>
+
+      <section class="feature-band">
+        <div>
+          <p class="eyebrow">Focus</p>
+          <h2>Quand la science donne raison à la croyance</h2>
+          <p>
+            Un bloc éditorial court entre deux rayons donne du rythme à la page et permet
+            de valoriser une collection, un auteur ou une thématique du moment.
+          </p>
+        </div>
+        <a class="button primary" href="#">Découvrir</a>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Valeurs sûres</p>
+          <h2>Meilleures ventes</h2>
+        </div>
+        <a href="#">Tout voir</a>
+      </section>
+
+      <section class="product-grid">
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2015/02/les-invocations-apr_s-la-pri_re.jpg" alt="Les invocations formulées après la prière">
+          <div>
+            <p class="tag">Petit prix</p>
+            <h3>Les invocations formulées après la prière</h3>
+            <p class="price">2,00 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2015/07/Le-tawhid-alharamayn.jpg" alt="Le tawhid Al-Outhaymine - Al-Haramayn">
+          <div>
+            <p class="tag">Doctrine</p>
+            <h3>Le tawhid Al-Outhaymine - Al-Haramayn</h3>
+            <p class="price">1,00 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2020/04/la-priere-expliquee-aux-filles-v2-450x675.jpg" alt="La prière expliquée aux filles">
+          <div>
+            <p class="tag">Enfants</p>
+            <h3>La prière expliquée aux filles</h3>
+            <p class="price">3,50 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2013/04/asma-allah-cover-450x530.jpg" alt="Les Noms Divins">
+          <div>
+            <p class="tag">Spiritualité</p>
+            <h3>Les Noms Divins</h3>
+            <p class="price">2,00 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2020/04/la-priere-expliquee-aux-filles-v2-450x675.jpg" alt="La prière expliquée aux garçons">
+          <div>
+            <p class="tag">Enfants</p>
+            <h3>La prière expliquée aux garçons</h3>
+            <p class="price">3,50 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2015/02/les-invocations-apr_s-la-pri_re.jpg" alt="Les invocations du matin et du soir">
+          <div>
+            <p class="tag">Invocation</p>
+            <h3>Les invocations du matin et du soir</h3>
+            <p class="price">2,50 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2013/04/asma-allah-cover-450x530.jpg" alt="Les Noms divins expliqués FR/AR">
+          <div>
+            <p class="tag">Spiritualité</p>
+            <h3>Les Noms divins expliqués FR/AR</h3>
+            <p class="price">3,00 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+        <article class="product-card">
+          <img src="https://www.maisondennour.com/wp-content/uploads/2015/02/les-invocations-apr_s-la-pri_re.jpg" alt="Les mérites de la prière de l'aube">
+          <div>
+            <p class="tag">Prière</p>
+            <h3>Les mérites de la prière de l'aube</h3>
+            <p class="price">2,00 €</p>
+          </div>
+          <button>Voir le produit</button>
+        </article>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Consultés souvent</p>
+          <h2>Les plus populaires</h2>
+        </div>
+        <a href="#">Tout voir</a>
+      </section>
+
+      <section class="showcase-grid popular-products">
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2009/10/file_14_60.jpg" alt="Le Saint Coran arabe - lecture Warch">
+          <span>Coran</span>
+          <h3>Le Saint Coran arabe - lecture Warch</h3>
+          <p>Référence très consultée du catalogue, notée 5/5 sur le site Maison d'Ennour.</p>
+          <strong>20,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2011/04/coranphonetique_2015-10-26_09.49.58.jpg" alt="Le Noble Coran Français-Arabe-Phonétique">
+          <span>Coran</span>
+          <h3>Le Noble Coran Français-Arabe-Phonétique</h3>
+          <p>Grand format avec aide à la lecture et à la prononciation.</p>
+          <strong>30,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2019/12/apr7s_la_mort_1-450x643.jpg" alt="Qu'est-ce qui se passe après la mort ?">
+          <span>Foi & spiritualité</span>
+          <h3>Qu'est-ce qui se passe après la mort ?</h3>
+          <p>Un petit ouvrage autour de la mort, du rappel et de l'au-delà.</p>
+          <strong>4,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2009/12/file_160.jpg" alt="Vie des Compagnons">
+          <span>Biographie</span>
+          <h3>Vie des Compagnons - Hayat as-Sahaba</h3>
+          <p>Une référence en trois volumes autour des compagnons.</p>
+          <strong>50,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2010/12/file_131_55.jpg" alt="Histoires authentiques des Prophètes">
+          <span>Enfants</span>
+          <h3>Histoires authentiques des Prophètes</h3>
+          <p>Pack de 24 livrets pour enfants, noté 5/5.</p>
+          <strong>24,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2009/08/capture_d_cran_2017-03-21_12.59.47.jpg" alt="Sahîh al-Bukhârî Complet Arabe-Français">
+          <span>Référence</span>
+          <h3>Sahîh al-Bukhârî Complet Arabe-Français</h3>
+          <p>Édition Maison d'Ennour en 4 volumes, ouvrage majeur de hadith.</p>
+          <strong>90,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2015/06/le-prophete-de-l-islam-muhammad-biographie-et-guide-de-poche-illustre-isra_1.jpg" alt="Le Prophète de l'Islam Muhammad">
+          <span>Biographie</span>
+          <h3>Le Prophète de l'Islam Muhammad</h3>
+          <p>Biographie illustrée sur les fondements moraux de la civilisation islamique.</p>
+          <strong>9,00 €</strong>
+        </article>
+        <article>
+          <img src="https://www.maisondennour.com/wp-content/uploads/2009/08/les-histoires-des-proph_tes-aplatie-450x654.jpg" alt="Les histoires des prophètes">
+          <span>Biographie</span>
+          <h3>Les histoires des prophètes</h3>
+          <p>Nouvelle édition augmentée, parmi les produits populaires du site.</p>
+          <strong>18,00 €</strong>
+        </article>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Pour apprendre en famille</p>
+          <h2>Espace Enfants</h2>
+        </div>
+        <a href="#">Tout voir</a>
+      </section>
+
+      <section class="kids-section">
+        <div>
+          <h3>Histoires, jeux éducatifs et apprentissage</h3>
+          <p>
+            Un rayon enfant plus chaleureux aide les parents à trouver rapidement des livres
+            adaptés à l'âge, à la lecture et aux premiers apprentissages.
+          </p>
+          <a class="button secondary" href="#">Entrer dans l'espace enfants</a>
+        </div>
+        <div class="mini-products">
+          <article>
+            <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/9782919843176-450x683.jpeg" alt="WLD BNT Tome 2">
+            <p>WLD BNT Tome 2</p>
+          </article>
+          <article>
+            <img src="https://www.maisondennour.com/wp-content/uploads/2026/05/Hidaya-9782960373318.jpg" alt="Hidaya Tome 2">
+            <p>Hidaya Tome 2</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Blog</p>
+          <h2>Derniers articles</h2>
+        </div>
+        <a href="#">Tous les articles</a>
+      </section>
+
+      <section class="article-grid">
+        <article>
+          <p class="tag">Conseil lecture</p>
+          <h3>Comment choisir un livre pour débuter ?</h3>
+          <p>Un article court peut guider les nouveaux visiteurs vers les bons rayons.</p>
+        </article>
+        <article>
+          <p class="tag">Vie de la librairie</p>
+          <h3>Les nouveautés à découvrir cette semaine</h3>
+          <p>Le blog peut donner un visage plus vivant au catalogue et aux arrivages.</p>
+        </article>
+        <article>
+          <p class="tag">Edition</p>
+          <h3>Dans les coulisses d'une publication</h3>
+          <p>Une façon simple de mieux valoriser le travail de Maison d'Ennour.</p>
+        </article>
+      </section>
+
+      <section class="section-heading">
+        <div>
+          <p class="eyebrow">Confiance</p>
+          <h2>Avis de nos lecteurs</h2>
+        </div>
+        <a href="#">Voir les avis Google</a>
+      </section>
+
+      <section class="reviews-grid">
+        <article>
+          <div class="review-head">
+            <span class="avatar">I</span>
+            <div>
+              <h3>ibrahim bouchiba</h3>
+              <p>18/05/2024</p>
+            </div>
+          </div>
+          <p class="stars">★★★★★</p>
+          <p>J'ai acheté deux livres sur le soufisme hier, au top. Merci. De la part de Ibrahim, ma review comme promis.</p>
+        </article>
+        <article>
+          <div class="review-head">
+            <span class="avatar image">S</span>
+            <div>
+              <h3>s p</h3>
+              <p>21/04/2024</p>
+            </div>
+          </div>
+          <p class="stars">★★★★★</p>
+          <p>Beaucoup de choix et le vendeur conseille bien.</p>
+        </article>
+        <article>
+          <div class="review-head">
+            <span class="avatar red">K</span>
+            <div>
+              <h3>Karim Benayad</h3>
+              <p>10/11/2023</p>
+            </div>
+          </div>
+          <p class="stars">★★★★★</p>
+          <p>Maison avec laquelle nous travaillons depuis presque 15 ans. Personnel efficace, pro et aimable.</p>
+        </article>
+        <article>
+          <div class="review-head">
+            <span class="avatar dark">A</span>
+            <div>
+              <h3>ahmed lemi</h3>
+              <p>24/09/2023</p>
+            </div>
+          </div>
+          <p class="stars">★★★★★</p>
+          <p>Ca va bien</p>
+        </article>
+      </section>
+
+      <section class="product-detail" aria-label="Fiche produit" hidden>
+        <button class="back-to-home" type="button">Retour à l'accueil</button>
+
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="#">Accueil</a>
+          <span>Livres</span>
+          <strong class="detail-crumb">Produit</strong>
+        </nav>
+
+        <section class="product-detail-layout">
+          <div class="product-gallery">
+            <img class="detail-image" src="" alt="">
+          </div>
+
+          <div class="product-summary">
+            <p class="availability">Disponibilité : <strong>En stock</strong></p>
+            <h1 class="detail-title">Titre du livre</h1>
+            <p class="detail-rating">★★★★★ <span>Noté 5.00 sur 5</span></p>
+            <p class="detail-reference">Référence : <span>MDN-0000</span></p>
+            <p class="detail-price">0,00 €</p>
+            <p class="detail-description">
+              Un ouvrage sélectionné par Maison d'Ennour pour accompagner la lecture, l'apprentissage et la transmission.
+            </p>
+
+            <div class="detail-buy-row">
+              <label>
+                <span>Quantité</span>
+                <input class="detail-quantity" type="number" min="1" value="1">
+              </label>
+              <button class="button primary detail-add-cart" type="button">Ajouter au panier</button>
+            </div>
+
+            <p class="detail-categories">Catégories : <a href="#">Livres</a>, <a href="#">Maison d'Ennour</a></p>
+            <div class="share-links" aria-label="Partager">
+              <span>Partager :</span>
+              <a href="#">Facebook</a>
+              <a href="#">X</a>
+              <a href="#">Pinterest</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-tabs">
+          <div class="tab-list" role="tablist" aria-label="Informations produit">
+            <button class="is-active" type="button" data-tab="description">Description</button>
+            <button type="button" data-tab="infos">Informations complémentaires</button>
+            <button type="button" data-tab="avis">Avis</button>
+          </div>
+          <article class="tab-panel is-active" data-panel="description">
+            <h2>Description</h2>
+            <p class="detail-long-description">
+              Cette fiche présente le livre avec les informations essentielles : résumé, prix, disponibilité et catégories.
+            </p>
+          </article>
+          <article class="tab-panel" data-panel="infos">
+            <h2>Informations complémentaires</h2>
+            <dl>
+              <div><dt>Langue</dt><dd>Français</dd></div>
+              <div><dt>Éditeur</dt><dd>Maison d'Ennour</dd></div>
+              <div><dt>Format</dt><dd>Livre broché</dd></div>
+              <div><dt>Expédition</dt><dd>Livraison suivie ou retrait en librairie</dd></div>
+            </dl>
+          </article>
+          <article class="tab-panel" data-panel="avis">
+            <h2>Avis</h2>
+            <p>Les avis clients pourront être affichés ici pour rassurer le visiteur avant l'achat.</p>
+          </article>
+        </section>
+
+        <section class="section-heading related-heading">
+          <div>
+            <p class="eyebrow">Dans le même rayon</p>
+            <h2>Produits similaires</h2>
+          </div>
+        </section>
+
+        <section class="product-grid related-products"></section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <section class="footer-brand">
+          <img src="assets/logo-maison-ennour.svg" alt="Maison d'Ennour">
+          <p>
+            <strong>Créée en 1984,</strong> Maison d'Ennour est une maison d'édition
+            et une librairie arabo-musulmane spécialisée dans l'édition, la vente
+            et la distribution d'ouvrages liés à la religion, la culture, les arts
+            et la civilisation islamiques.
+          </p>
+          <p>Une question ? Notre conseiller vous répond</p>
+          <div class="social-links" aria-label="Réseaux sociaux">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="X">x</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Pinterest">p</a>
+          </div>
+        </section>
+
+        <section class="footer-contact">
+          <h2>Contact</h2>
+          <p>Une question ? Notre conseiller vous répond</p>
+          <a class="phone" href="tel:0143387732">01 43 38 77 32</a>
+        </section>
+
+        <section class="footer-locations">
+          <h2>Nous trouver</h2>
+          <address>
+            21 rue Moret, 75011 Paris<br>
+            35 rue de Tanger, 75019 Paris<br>
+            118 bd Félix Faure, 93300 Aubervilliers
+          </address>
+          <p>
+            Lundi - Dimanche : 10:00 - 19:00<br>
+            Mardi - Mercredi : 10:00 - 17:30
+          </p>
+          <a href="mailto:ennourclients@yahoo.fr">ennourclients@yahoo.fr</a>
+          <a href="mailto:ennourclients75@yahoo.com">ennourclients75@yahoo.com</a>
+        </section>
+
+        <section class="footer-links-group">
+          <div>
+            <h2>Maison d'Ennour</h2>
+            <nav class="footer-nav" aria-label="Maison d'Ennour">
+              <a href="#">À propos</a>
+              <a href="#">Conditions générales de vente</a>
+              <a href="#">Mentions légales</a>
+            </nav>
+          </div>
+          <div>
+            <h2>Liens utiles</h2>
+            <nav class="footer-nav" aria-label="Liens utiles">
+              <a href="#">Mon compte</a>
+              <a href="#">Auteurs</a>
+              <a href="#">Maison d'édition</a>
+            </nav>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Maison d'Ennour - Maquette locale de proposition</p>
+        <p>Paiement sécurisé · Livraison suivie · Retrait en librairie</p>
+      </div>
+    </footer>
+
+    <div class="overlay" data-close-panels></div>
+    <aside class="cart-panel" id="cart-panel" aria-label="Panier" aria-hidden="true">
+      <div class="cart-panel-head">
+        <div>
+          <p class="eyebrow">Votre sélection</p>
+          <h2>Panier</h2>
+        </div>
+        <button class="panel-close" type="button" aria-label="Fermer le panier">×</button>
+      </div>
+      <div class="cart-items">
+        <p class="empty-cart">Votre panier est vide pour le moment.</p>
+      </div>
+      <div class="cart-total">
+        <span>Total estimé</span>
+        <strong>0,00 €</strong>
+      </div>
+      <div class="cart-actions">
+        <a class="button primary" href="#">Commander</a>
+        <button class="button secondary panel-close-action" type="button">Continuer mes achats</button>
+      </div>
+    </aside>
+    <script src="script.js"></script>
+  </body>
+</html>
