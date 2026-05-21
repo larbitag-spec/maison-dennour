@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maison d'Ennour - Maquette accueil</title>
-    <link rel="stylesheet" href="styles.css?v=20260520-11">
+    <link rel="stylesheet" href="styles.css?v=20260521-2">
   </head>
   <body>
     <header class="site-header">
@@ -69,27 +69,75 @@
         </div>
         <div class="catalog-item">
           <button type="button" class="catalog-trigger" aria-expanded="false">Livres</button>
-          <div class="catalog-menu">
-            <section>
-              <h2>Sciences islamiques</h2>
-              <a href="#">Foi & spiritualité</a>
-              <a href="#">Hadith</a>
-              <a href="#">Jurisprudence</a>
-              <a href="#">Invocations</a>
-            </section>
-            <section>
-              <h2>Culture</h2>
-              <a href="#">Biographie</a>
+          <div class="catalog-menu books-menu">
+            <section class="books-menu-main">
+              <h2>Livres</h2>
+              <a class="menu-drilldown" href="#" data-target="hadith">Tradition prophétique (Hadiths)</a>
+              <div class="books-submenu" data-menu-panel="hadith" hidden>
+                <a href="#">Recueils de hadîth</a>
+                <a href="#">Commentaire de hadîth</a>
+                <a href="#">Sciences de hadîth</a>
+              </div>
+              <a class="menu-drilldown" href="#" data-target="jurisprudence">Jurisprudence (Fiqh)</a>
+              <div class="books-submenu" data-menu-panel="jurisprudence" hidden>
+                <a href="#">Fondements de la jurisprudence</a>
+                <a href="#">Les écoles juridiques</a>
+                <a href="#">La prière</a>
+                <a href="#">Le jeûne</a>
+                <a href="#">La zakât</a>
+                <a href="#">Le hajj</a>
+              </div>
+              <a class="menu-drilldown" href="#" data-target="spiritualite">Foi & Spiritualité</a>
+              <div class="books-submenu" data-menu-panel="spiritualite" hidden>
+                <a href="#">Dogme (‘aqîda)</a>
+                <a href="#">Piliers de la foi</a>
+                <a href="#">Purification spirituelle</a>
+                <a href="#">Invocations</a>
+                <a href="#">Noms divins</a>
+                <a href="#">Interprétation des rêves</a>
+                <a href="#">Ruqya</a>
+                <a href="#">Soufisme</a>
+              </div>
+              <a class="menu-drilldown" href="#" data-target="biographies">Biographie</a>
+              <div class="books-submenu" data-menu-panel="biographies" hidden>
+                <a href="#">La vie du Prophète</a>
+                <a href="#">La vie des Prophètes</a>
+                <a href="#">Vie des compagnons</a>
+                <a href="#">Savants musulmans</a>
+                <a href="#">Récits du Coran</a>
+                <a href="#">Personnages célèbres</a>
+              </div>
+              <a class="menu-drilldown" href="#" data-target="cuisine">Cuisines du monde</a>
+              <div class="books-submenu" data-menu-panel="cuisine" hidden>
+                <a href="#">Cuisine marocaine</a>
+                <a href="#">Cuisine algérienne</a>
+                <a href="#">Cuisine tunisienne</a>
+                <a href="#">Cuisine du monde</a>
+              </div>
+              <a href="#">Economie</a>
+              <a class="menu-drilldown" href="#" data-target="essais">Essais</a>
+              <div class="books-submenu" data-menu-panel="essais" hidden>
+                <a href="#">Islam & science</a>
+                <a href="#">Islam et société</a>
+                <a href="#">L’Islam dans le monde</a>
+                <a href="#">Questions actuelles</a>
+                <a href="#">Pensée musulmane contemporaine</a>
+                <a href="#">Philosophie</a>
+                <a href="#">Psychologie</a>
+                <a href="#">Histoires des idées</a>
+                <a href="#">Politique</a>
+              </div>
               <a href="#">Histoire</a>
-              <a href="#">Langue arabe</a>
-              <a href="#">Médecine & santé</a>
-            </section>
-            <section>
-              <h2>Formats</h2>
-              <a href="#">Petits prix</a>
-              <a href="#">Livres numériques</a>
-              <a href="#">Meilleures ventes</a>
-              <a href="#">Toutes les catégories</a>
+              <a class="menu-drilldown" href="#" data-target="langues-litterature">Langues & Littérature</a>
+              <div class="books-submenu" data-menu-panel="langues-litterature" hidden>
+                <a href="#">Dictionnaires</a>
+                <a href="#">Apprendre l’arabe</a>
+                <a href="#">Grammaire arabe</a>
+                <a href="#">Calligraphie</a>
+              </div>
+              <a href="#">Dictionnaires</a>
+              <a href="#">Livres numériques (eBooks)</a>
+              <a href="#">Médecine & Santé</a>
             </section>
           </div>
         </div>
@@ -99,9 +147,10 @@
             <section>
               <h2>Famille</h2>
               <a href="#">Mariage</a>
-              <a href="#">Éducation</a>
-              <a href="#">Vie quotidienne</a>
-              <a href="#">Conseils aux parents</a>
+              <a href="#">Vie de couple</a>
+              <a href="#">Education des enfants</a>
+              <a href="#">La femme musulmane</a>
+              <a href="#">Prénoms arabes</a>
             </section>
           </div>
         </div>
@@ -110,10 +159,12 @@
           <div class="catalog-menu compact-menu">
             <section>
               <h2>Espace enfants</h2>
-              <a href="#">Histoires</a>
+              <a href="#">Histoires des Prophètes</a>
+              <a href="#">Histoire du Prophète</a>
+              <a href="#">Récits et contes</a>
+              <a href="#">Apprendre la prière</a>
               <a href="#">Jeux éducatifs</a>
-              <a href="#">Apprentissage de la prière</a>
-              <a href="#">Ramadan enfants</a>
+              <a href="#">BD (bandes dessinées)</a>
             </section>
           </div>
         </div>
@@ -873,6 +924,6 @@
         <button class="button secondary panel-close-action" type="button">Continuer mes achats</button>
       </div>
     </aside>
-    <script src="script.js"></script>
+    <script src="script.js?v=20260521-2"></script>
   </body>
 </html>

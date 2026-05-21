@@ -316,13 +316,69 @@ img {
 }
 
 .catalog-menu a {
+  display: block;
   padding: 10px 0 12px;
   color: var(--ink);
   border-bottom: 1px solid var(--line);
   font-weight: 700;
 }
 
-.catalog-menu a:hover {
+.catalog-menu a:hover,
+.menu-drilldown:hover,
+.menu-drilldown.is-active {
+  color: #ef4b43;
+}
+
+.books-menu {
+  width: 440px;
+}
+
+.menu-drilldown {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 12px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  text-align: left;
+}
+
+.menu-drilldown::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.books-submenu[hidden] {
+  display: none !important;
+}
+
+.books-submenu {
+  display: grid;
+  gap: 0;
+  margin: -1px 0 10px 18px;
+  padding-left: 16px;
+  border-left: 2px solid #ef4b43;
+}
+
+.books-submenu a {
+  padding: 8px 0 10px;
+  color: var(--muted);
+  font-size: 15px;
+  border-bottom: 1px solid var(--line);
+}
+
+.books-submenu a:hover {
   color: #ef4b43;
 }
 
@@ -1695,6 +1751,10 @@ h1 {
 
   .catalog-menu h2 {
     font-size: 16px;
+  }
+
+  .books-menu {
+    width: auto;
   }
 
   .catalog-highlight {

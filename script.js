@@ -3,6 +3,7 @@ const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".nav");
 const catalogItems = Array.from(document.querySelectorAll(".catalog-item"));
 const catalogTriggers = Array.from(document.querySelectorAll(".catalog-trigger"));
+const menuDrilldowns = Array.from(document.querySelectorAll(".menu-drilldown"));
 const overlay = document.querySelector(".overlay");
 const cartLink = document.querySelector(".cart-link");
 const cartPanel = document.querySelector(".cart-panel");
@@ -143,6 +144,12 @@ function closeCatalogMenus(exceptItem) {
     if (item === exceptItem) return;
     item.classList.remove("is-open");
     item.querySelector(".catalog-trigger")?.setAttribute("aria-expanded", "false");
+    item.querySelectorAll("[data-menu-panel]").forEach((panel) => {
+      panel.hidden = true;
+    });
+    item.querySelectorAll(".menu-drilldown").forEach((trigger) => {
+      trigger.classList.remove("is-active");
+    });
   });
 }
 
@@ -341,6 +348,38 @@ catalogTriggers.forEach((trigger) => {
     closeCatalogMenus(item);
   });
 });
+menuDrilldowns.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const menu = button.closest(".catalog-menu");
+    const panel = menu?.querySelector(`[data-menu-panel="${button.dataset.target}"]`);
+
+    if (!menu || !panel) return;
+    const nextHidden = !panel.hidden;
+
+    menu.querySelectorAll("[data-menu-panel]").forEach((menuPanel) => {
+      if (menuPanel !== panel) {
+        menuPanel.hidden = true;
+      }
+    });
+    menu.querySelectorAll(".menu-drilldown").forEach((trigger) => {
+      if (trigger !== button) {
+        trigger.classList.remove("is-active");
+      }
+    });
+
+    panel.hidden = nextHidden;
+    button.classList.toggle("is-active", !nextHidden);
+  });
+});
+document.querySelectorAll(".catalog-menu").forEach((menu) => {
+  menu.addEventListener("click", (event) => {
+    if (event.target.closest(".menu-drilldown, .menu-back")) {
+      event.stopPropagation();
+    }
+  });
+});
 overlay?.addEventListener("click", () => {
   closeCart();
   closeMenu();
@@ -348,6 +387,7 @@ overlay?.addEventListener("click", () => {
 closePanelButtons.forEach((button) => button.addEventListener("click", closeCart));
 mainNav?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
+    if (link.classList.contains("menu-drilldown") || link.classList.contains("menu-back")) return;
     closeCatalogMenus();
     closeMenu();
   });
